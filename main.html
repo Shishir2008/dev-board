@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#F4F7FF] p-2">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm max-w-7xl mx-auto my-4 rounded-lg">
+            <div class="flex-1">
+                <div class="flex items-center gap-2">
+                    <img class="w-10 h-10 object-cover" src="./assets/logo.png" alt="">
+                    <h2 class="text-[#00303C]">Dev <span class="font-bold">Board</span></h2>
+                </div>
+            </div>
+            <div class="flex-none">
+                <button id="go-btn" class="btn btn bg-[#3752FD] text-white">Back to Dask</button>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto my-4 rounded-lg">
+        <p class="text-xl font-bold text-center">Blogs</p>
+        <div class="bg-white p-2 rounded-lg my-4">
+            <p class="font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="my-4">
+            <p class="text-gray-400">There are different ways to select an element in dom such as . getElementById ,
+                getElementsByClassName , getElementsByName , getElementsByTagName , querySelector , querySelectorAll .
+            </p>
+        </div>
+        <div class="bg-white p-2 rounded-lg my-4">
+            <p class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <hr class="my-4">
+            <p class="text-gray-400">Using inner HTML, we can display the text inside it by writing tags inside it and
+                add different types of styles. Using inner text, we can see what is written inside it and using inner
+                text, we can change what is written inside the element.</p>
+        </div>
+        <div class="bg-white p-2 rounded-lg my-4">
+            <p class="font-bold">Question-3: What is event delegation in the DOM?</p>
+            <hr class="my-4">
+            <p class="text-gray-400">Event delegation means telling its parent that we want to work inside its guarantor
+                instead of working inside the element. We will use event delegation. This reduces our code and makes it
+                very easy to capture its child inside a friend through an event. That's why we use event delegation.</p>
+        </div>
+        <div class="bg-white p-2 rounded-lg my-4">
+            <p class="font-bold">Question-4: What is event bubbling in the DOM?</p>
+            <hr class="my-4">
+            <p class="text-gray-400">Event Bubbling is a behavior of the DOM that when an event occurs on an element, it
+                starts from that element first, then gradually goes up to its parent, then the next parent, and so on.
+                If we want, we can stop this from happening. All of this is event bubbling.</p>
+        </div>
+        <div class="bg-white p-2 rounded-lg my-4">
+            <p class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr class="my-4">
+            <p class="text-gray-400">I am using JavaScript. createElement() , appendChild(), append() , remove() ,
+                removeChild() </p>
+        </div>
+    </main>
+
+
+    <script>
+        document.getElementById('go-btn').addEventListener('click', function () {
+            window.location.href = "./index.html";
+        })
+    </script>
+</body>
+
+</html>
