@@ -1,3 +1,15 @@
+const btnColor = document.getElementById('btn-color');
+function getColor(){
+    return '#'+ Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+}
+btnColor.addEventListener('click',function(){
+    const color = getColor();
+    document.body.style.backgroundColor = color;
+})
+
+
+
+
 document.getElementById('Blog-click').addEventListener('click', function () {
     window.location.href = "./main.html";
 })
